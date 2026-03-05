@@ -40,7 +40,7 @@
     "title": "Profile Update Error",
     "description": "Error occurs while updating profile information.",
     "customer": "Sadia Islam",
-    "priority": "Low",
+    "priority": "Medium",
     "status": "Open",
     "createdAt": "2026-03-03"
   },
@@ -85,7 +85,7 @@
     "title": "Search Not Working",
     "description": "Search functionality not returning results.",
     "customer": "Rafiq Alam",
-    "priority": "Low",
+    "priority": "High",
     "status": "Open",
     "createdAt": "2026-03-05"
   },

@@ -1,28 +1,35 @@
 import React from 'react'
-
-export default function Banner() {
+import image from '../../assets/vector1.png'
+export default function Banner({ticketList,resolvedTask}) {
   return (
-    <div className='flex justify-center gap-20 mt-10'>
-     <div className="w-96 h-72 bg-[url('/vector1.png')] bg-cover bg-center ">
-       <div  className='flex items-center justify-center text-center bg-blue-500 h-full w-full rounded-2xl'>
-        <div>
-          <h1>In Progress</h1>
+    <div className='flex flex-col md:flex-row justify-center gap-20 mt-10'>
+      <div className="relative w-96 h-72 rounded-xl flex items-center justify-center bg-gradient-to-r from-indigo-600 to-purple-600 overflow-hidden">
 
-          
-        <h1>0</h1>
-        </div>
-      </div>
-     </div>
-     <div className="w-96 h-72 bg-[url('/vector1.png')] bg-cover bg-center">
-       <div  className='flex items-center justify-center text-center h-full w-full bg-green-600 rounded-2xl'>
-        <div>
-          <h1>Resolved</h1>
+      <img
+        src={image}
+        className="absolute inset-0 w-full h-full object-cover opacity-40"
+      />
 
-          
-        <h1>0</h1>
-        </div>
+      <div className="relative text-center text-white">
+        <p className="text-lg">In-Progress</p>
+        <h1 className="text-6xl font-bold">{ticketList.length}</h1>
       </div>
-     </div>
+
+    </div>
+     <div className="relative w-96 h-72 rounded-xl flex items-center justify-center bg-gradient-to-r from-green-500 to-green-700 overflow-hidden">
+
+      <img
+        src={image}
+        className="absolute inset-0 w-full h-full object-cover opacity-40"
+      />
+
+      <div className="relative text-center text-white">
+        <p className="text-lg">Resolved</p>
+        <h1 className="text-6xl font-bold">{resolvedTask.length}</h1>
+      </div>
+
+    </div>
+   
 
     </div>
   );

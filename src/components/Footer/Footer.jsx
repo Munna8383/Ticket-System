@@ -1,5 +1,7 @@
 import React from 'react'
-
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { IoLogoTiktok } from "react-icons/io5";
 export default function Footer() {
   return (
     <div className='p-10 bg-black text-gray-300 mt-10'>
@@ -29,9 +31,18 @@ export default function Footer() {
 
       <div className='flex-1 space-y-3'>
         <h1 className='text-xl font-bold'>Social Links</h1>
+        <div className='flex items-center gap-1'>
+          <span><FaFacebook /></span>
         <h1>Facebook</h1>
+        </div>
+        <div className='flex items-center gap-1'>
+          <span><FaInstagram /></span>
         <h1>Instagram</h1>
+        </div>
+        <div className='flex items-center gap-1'>
+          <span><IoLogoTiktok /></span>
         <h1>Tiktok</h1>
+        </div>
       </div>
      </div>
      <div className='mt-4'>

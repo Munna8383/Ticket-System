@@ -3,7 +3,7 @@ import React from 'react'
 export default function Nabvar() {
   return (
     <div>
-      <div className="navbar px-10 text-black">
+      <div className="navbar px-10 text-black bg-white">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
